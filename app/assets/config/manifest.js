@@ -1,5 +1,6 @@
 //= link_tree ../images
 //= link_tree ../builds
+//= link template/bootstrap.min.css
 //= link template/magnific-popup.css
 //= link template/jquery-ui.css
 //= link template/owl.carousel.min.css

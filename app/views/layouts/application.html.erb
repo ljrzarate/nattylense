@@ -8,6 +8,7 @@
 
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet">
     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
+    <%= stylesheet_link_tag "template/bootstrap.min" %>
     <%= stylesheet_link_tag "template/magnific-popup" %>
     <%= stylesheet_link_tag "template/jquery-ui" %>
     <%= stylesheet_link_tag "template/owl.carousel.min" %>
@@ -22,27 +23,27 @@
   <body>
     <div class="site-wrap">
 
-      <div class="site-mobile-menu">
-        <div class="site-mobile-menu-header">
-          <div class="site-mobile-menu-close mt-3">
-            <span class="icon-close2 js-menu-toggle"></span>
-          </div>
+    <div class="site-mobile-menu">
+      <div class="site-mobile-menu-header">
+        <div class="site-mobile-menu-close mt-3">
+          <span class="icon-close2 js-menu-toggle"></span>
         </div>
-        <div class="site-mobile-menu-body"></div>
       </div>
+      <div class="site-mobile-menu-body"></div>
+    </div>
 
 
 
 
-      <header class="site-navbar py-3" role="banner">
+    <header class="site-navbar py-3" role="banner">
 
-        <div class="container-fluid">
-          <div class="row align-items-center">
+      <div class="container-fluid">
+        <div class="row align-items-center">
 
-          <div class="col-6 col-xl-2">
+          <div class="col-6 col-xl-2" data-aos="fade-down">
             <h1 class="mb-0"><a href="index.html" class="text-white h2 mb-0">Photosen</a></h1>
           </div>
-          <div class="col-10 col-md-8 d-none d-xl-block">
+          <div class="col-10 col-md-8 d-none d-xl-block" data-aos="fade-down">
             <nav class="site-navigation position-relative text-right text-lg-center" role="navigation">
 
               <ul class="site-menu js-clone-nav mx-auto d-none d-lg-block">
@@ -74,7 +75,7 @@
             </nav>
           </div>
 
-          <div class="col-6 col-xl-2 text-right">
+          <div class="col-6 col-xl-2 text-right" data-aos="fade-down">
             <div class="d-none d-xl-inline-block">
               <ul class="site-menu js-clone-nav ml-auto list-unstyled d-flex text-right mb-0" data-class="social">
                 <li>
@@ -97,141 +98,144 @@
           </div>
 
         </div>
-        </div>
-
-      </header>
-
-
-
-      <div class="container-fluid">
-        <div class="row">
-          <div class="col-lg-4">
-
-            <div class="image-wrap-2">
-              <div class="image-info">
-                <h2 class="mb-3">Nature</h2>
-                <a href="single.html" class="btn btn-outline-white py-2 px-4">More Photos</a>
-              </div>
-              <%= image_tag "img_1.jpg" %>
-            </div>
-
-          </div>
-          <div class="col-lg-4">
-            <div class="image-wrap-2">
-              <div class="image-info">
-                <h2 class="mb-3">Portrait</h2>
-                <a href="single.html" class="btn btn-outline-white py-2 px-4">More Photos</a>
-              </div>
-              <%= image_tag "img_2.jpg" %>
-            </div>
-          </div>
-          <div class="col-lg-4">
-            <div class="image-wrap-2">
-              <div class="image-info">
-                <h2 class="mb-3">People</h2>
-                <a href="single.html" class="btn btn-outline-white py-2 px-4">More Photos</a>
-              </div>
-              <%= image_tag "img_1.jpg" %>
-            </div>
-          </div>
-
-          <div class="col-lg-4">
-            <div class="image-wrap-2">
-              <div class="image-info">
-                <h2 class="mb-3">Architecture</h2>
-                <a href="single.html" class="btn btn-outline-white py-2 px-4">More Photos</a>
-              </div>
-              <%= image_tag "img_1.jpg" %>
-            </div>
-          </div>
-
-          <div class="col-lg-4">
-            <div class="image-wrap-2">
-              <div class="image-info">
-                <h2 class="mb-3">Animals</h2>
-                <a href="single.html" class="btn btn-outline-white py-2 px-4">More Photos</a>
-              </div>
-              <%= image_tag "img_1.jpg" %>
-            </div>
-          </div>
-
-          <div class="col-lg-4">
-            <div class="image-wrap-2">
-              <div class="image-info">
-                <h2 class="mb-3">Sports</h2>
-                <a href="single.html" class="btn btn-outline-white py-2 px-4">More Photos</a>
-              </div>
-              <%= image_tag "img_1.jpg" %>
-            </div>
-          </div>
-
-          <div class="col-lg-4">
-            <div class="image-wrap-2">
-              <div class="image-info">
-                <h2 class="mb-3">Travel</h2>
-                <a href="single.html" class="btn btn-outline-white py-2 px-4">More Photos</a>
-              </div>
-              <%= image_tag "img_1.jpg" %>
-            </div>
-          </div>
-
-          <div class="col-lg-4">
-            <div class="image-wrap-2">
-              <div class="image-info">
-                <h2 class="mb-3">People</h2>
-                <a href="single.html" class="btn btn-outline-white py-2 px-4">More Photos</a>
-              </div>
-              <%= image_tag "img_1.jpg" %>
-            </div>
-          </div>
-
-          <div class="col-lg-4">
-            <div class="image-wrap-2">
-              <div class="image-info">
-                <h2 class="mb-3">Architecture</h2>
-                <a href="single.html" class="btn btn-outline-white py-2 px-4">More Photos</a>
-              </div>
-              <%= image_tag "img_1.jpg" %>
-            </div>
-          </div>
-
-        </div>
       </div>
 
-      <div class="footer py-4">
-        <div class="container-fluid text-center">
-          <p>
-            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-            Copyright &copy;>Colorlib</a>
-            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-          </p>
+    </header>
+
+
+
+    <div class="container-fluid" data-aos="fade" data-aos-delay="500">
+      <div class="row">
+        <div class="col-lg-4">
+
+          <div class="image-wrap-2">
+            <div class="image-info">
+              <h2 class="mb-3">Nature</h2>
+              <a href="single.html" class="btn btn-outline-white py-2 px-4">More Photos</a>
+            </div>
+            <%= image_tag "img_1.jpg", alt: 'Image', class: "img-fluid" %>
+          </div>
+
         </div>
+        <div class="col-lg-4">
+          <div class="image-wrap-2">
+            <div class="image-info">
+              <h2 class="mb-3">Portrait</h2>
+              <a href="single.html" class="btn btn-outline-white py-2 px-4">More Photos</a>
+            </div>
+            <%= image_tag "img_1.jpg", alt: 'Image', class: "img-fluid" %>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="image-wrap-2">
+            <div class="image-info">
+              <h2 class="mb-3">People</h2>
+              <a href="single.html" class="btn btn-outline-white py-2 px-4">More Photos</a>
+            </div>
+            <%= image_tag "img_1.jpg", alt: 'Image', class: "img-fluid" %>
+          </div>
+        </div>
+
+        <div class="col-lg-4">
+          <div class="image-wrap-2">
+            <div class="image-info">
+              <h2 class="mb-3">Architecture</h2>
+              <a href="single.html" class="btn btn-outline-white py-2 px-4">More Photos</a>
+            </div>
+            <%= image_tag "img_1.jpg", alt: 'Image', class: "img-fluid" %>
+          </div>
+        </div>
+
+        <div class="col-lg-4">
+          <div class="image-wrap-2">
+            <div class="image-info">
+              <h2 class="mb-3">Animals</h2>
+              <a href="single.html" class="btn btn-outline-white py-2 px-4">More Photos</a>
+            </div>
+            <%= image_tag "img_1.jpg", alt: 'Image', class: "img-fluid" %>
+          </div>
+        </div>
+
+        <div class="col-lg-4">
+          <div class="image-wrap-2">
+            <div class="image-info">
+              <h2 class="mb-3">Sports</h2>
+              <a href="single.html" class="btn btn-outline-white py-2 px-4">More Photos</a>
+            </div>
+            <%= image_tag "img_1.jpg", alt: 'Image', class: "img-fluid" %>
+          </div>
+        </div>
+
+        <div class="col-lg-4">
+          <div class="image-wrap-2">
+            <div class="image-info">
+              <h2 class="mb-3">Travel</h2>
+              <a href="single.html" class="btn btn-outline-white py-2 px-4">More Photos</a>
+            </div>
+            <%= image_tag "img_1.jpg", alt: 'Image', class: "img-fluid" %>
+          </div>
+        </div>
+
+        <div class="col-lg-4">
+          <div class="image-wrap-2">
+            <div class="image-info">
+              <h2 class="mb-3">People</h2>
+              <a href="single.html" class="btn btn-outline-white py-2 px-4">More Photos</a>
+            </div>
+            <%= image_tag "img_1.jpg", alt: 'Image', class: "img-fluid" %>
+          </div>
+        </div>
+
+        <div class="col-lg-4">
+          <div class="image-wrap-2">
+            <div class="image-info">
+              <h2 class="mb-3">Architecture</h2>
+              <a href="single.html" class="btn btn-outline-white py-2 px-4">More Photos</a>
+            </div>
+            <%= image_tag "img_1.jpg", alt: 'Image', class: "img-fluid" %>
+          </div>
+        </div>
+
       </div>
-
-      <%= yield %>
-      <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-      <script src="https://code.jquery.com/jquery-migrate-3.0.0.min.js"></script>
-      <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
-      <script src="https://unpkg.com/@popperjs/core@2/dist/umd/popper.js"></script>
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/stellar.js/0.6.1/jquery.stellar.min.js"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.countdown/2.2.0/jquery.countdown.min.js"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
-
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/picturefill/3.0.3/picturefill.min.js"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/1.3.2/js/lightgallery.js"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.3.2/swiper-bundle.min.js"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.3.2/swiper-bundle.min.js"></script>
-      <%= javascript_include_tag "application", "data-turbo-track": "reload", defer: true %>
-
-      <script>
-        $(document).ready(function(){
-          console.log("body loaded")
-          $('#lightgallery').lightGallery();
-        });
-      </script>
-
     </div>
+
+    <div class="footer py-4">
+      <div class="container-fluid text-center">
+        <p>
+          <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+          Copyright &copy;<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank" >Colorlib</a>
+          <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+        </p>
+      </div>
+    </div>
+
+
+
+
+
+  </div>
+
+    <%= yield %>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/jquery-migrate-3.0.0.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+    <script src="https://unpkg.com/@popperjs/core@2/dist/umd/popper.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/stellar.js/0.6.1/jquery.stellar.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.countdown/2.2.0/jquery.countdown.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.3.2/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/picturefill/3.0.3/picturefill.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/1.3.2/js/lightgallery.js"></script>
+    <%= javascript_include_tag "application", "data-turbo-track": "reload", defer: true %>
+
+    <script>
+      $(document).ready(function(){
+        console.log("body loaded")
+        $('#lightgallery').lightGallery();
+      });
+    </script>
   </body>
 </html>
