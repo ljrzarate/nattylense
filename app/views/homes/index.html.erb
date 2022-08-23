@@ -7,7 +7,7 @@
           <h2 class="mb-3"><%= tag.name.titleize %></h2>
           <%= link_to "More Photos", search_home_path(tag: tag.name.to_sym), class: "btn btn-outline-white py-2 px-4" %>
         </div>
-        <%= image_tag "img_1.jpg", alt: 'Image', class: "img-fluid" %>
+        <%= image_tag rails_blob_url(@posts.select{|e| e[:tag_id] == tag.id}.first[:post].image), alt: 'Image', class: "img-fluid" %>
       </div>
     </div>
   <%- end %>
