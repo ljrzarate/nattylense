@@ -2,6 +2,8 @@
 //= link_tree ../builds
 
 //= link administrate-field-active_storage/application.css
+//= link administrate-field-taggable/application.css
+//= link administrate-field-taggable/application.js
 
 //= link template/bootstrap.min.css
 //= link template/magnific-popup.css

@@ -13,6 +13,7 @@ class PostDashboard < Administrate::BaseDashboard
     title: Field::String,
     created_at: Field::DateTime,
     updated_at: Field::DateTime,
+    tags: Field::ActsAsTaggable
   }.freeze
 
   COLLECTION_ATTRIBUTES = %i[
@@ -23,15 +24,17 @@ class PostDashboard < Administrate::BaseDashboard
 
   SHOW_PAGE_ATTRIBUTES = %i[
     id
-    image
-    description
     title
+    description
+    image
+    tags
   ].freeze
 
   FORM_ATTRIBUTES = %i[
     title
     description
     image
+    tags
   ].freeze
 
   COLLECTION_FILTERS = {}.freeze
