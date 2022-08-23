@@ -3,6 +3,6 @@ class HomesController < ApplicationController
   end
 
   def search
-    
+
   end
 end

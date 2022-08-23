@@ -106,70 +106,7 @@
 
 
     <div class="container-fluid" data-aos="fade" data-aos-delay="500">
-      <div class="row">
-
-        <div class="col-lg-4">
-          <div class="image-wrap-2">
-            <div class="image-info">
-              <h2 class="mb-3">Architecture</h2>
-              <%= link_to "More Photos", search_home_path(tag: :architecture), class: "btn btn-outline-white py-2 px-4" %>
-              <a href="single.html" class="btn btn-outline-white py-2 px-4">More Photos</a>
-            </div>
-            <%= image_tag "img_1.jpg", alt: 'Image', class: "img-fluid" %>
-          </div>
-        </div>
-
-        <div class="col-lg-4">
-          <div class="image-wrap-2">
-            <div class="image-info">
-              <h2 class="mb-3">Animals</h2>
-              <a href="single.html" class="btn btn-outline-white py-2 px-4">More Photos</a>
-            </div>
-            <%= image_tag "img_1.jpg", alt: 'Image', class: "img-fluid" %>
-          </div>
-        </div>
-
-        <div class="col-lg-4">
-          <div class="image-wrap-2">
-            <div class="image-info">
-              <h2 class="mb-3">Sports</h2>
-              <a href="single.html" class="btn btn-outline-white py-2 px-4">More Photos</a>
-            </div>
-            <%= image_tag "img_1.jpg", alt: 'Image', class: "img-fluid" %>
-          </div>
-        </div>
-
-        <div class="col-lg-4">
-          <div class="image-wrap-2">
-            <div class="image-info">
-              <h2 class="mb-3">Travel</h2>
-              <a href="single.html" class="btn btn-outline-white py-2 px-4">More Photos</a>
-            </div>
-            <%= image_tag "img_1.jpg", alt: 'Image', class: "img-fluid" %>
-          </div>
-        </div>
-
-        <div class="col-lg-4">
-          <div class="image-wrap-2">
-            <div class="image-info">
-              <h2 class="mb-3">People</h2>
-              <a href="single.html" class="btn btn-outline-white py-2 px-4">More Photos</a>
-            </div>
-            <%= image_tag "img_1.jpg", alt: 'Image', class: "img-fluid" %>
-          </div>
-        </div>
-
-        <div class="col-lg-4">
-          <div class="image-wrap-2">
-            <div class="image-info">
-              <h2 class="mb-3">Architecture</h2>
-              <a href="single.html" class="btn btn-outline-white py-2 px-4">More Photos</a>
-            </div>
-            <%= image_tag "img_1.jpg", alt: 'Image', class: "img-fluid" %>
-          </div>
-        </div>
-
-      </div>
+      <%= yield %>
     </div>
 
     <div class="footer py-4">
@@ -188,7 +125,6 @@
 
   </div>
 
-    <%= yield %>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://code.jquery.com/jquery-migrate-3.0.0.min.js"></script>
     <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>

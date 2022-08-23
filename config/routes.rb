@@ -1,9 +1,13 @@
 Rails.application.routes.draw do
-  get 'home/index'
-  # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
-
-  # Defines the root path route ("/")
   root "homes#index"
+
+  namespace :admin do
+    resources :posts do
+      delete :image, on: :member, action: :destroy_image
+    end
+    root to: "posts#index"
+  end
+
   resource :home do
     collection do
       get :search
