@@ -5,6 +5,7 @@ Rails.application.routes.draw do
     resources :posts do
       delete :image, on: :member, action: :destroy_image
     end
+    resources :presets
     root to: "posts#index"
   end
 
@@ -13,4 +14,5 @@ Rails.application.routes.draw do
       get :search
     end
   end
+  resources :presets
 end

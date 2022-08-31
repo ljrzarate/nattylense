@@ -1,0 +1,8 @@
+<div class="d-flex p-4">
+    <%= @preset.title %>
+    <%= button_to "Buy", presets_path %>
+</div>
+<div>
+    <%= image_tag @preset.file.variant(:thumb) %>
+    <%= button_to "Go back", presets_path %>
+</div>
