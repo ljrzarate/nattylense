@@ -85,8 +85,8 @@ GEM
       acts-as-taggable-on (>= 6.0)
       administrate (< 1.0.0)
     aws-eventstream (1.2.0)
-    aws-partitions (1.621.0)
-    aws-sdk-core (3.134.0)
+    aws-partitions (1.624.0)
+    aws-sdk-core (3.137.0)
       aws-eventstream (~> 1, >= 1.0.2)
       aws-partitions (~> 1, >= 1.525.0)
       aws-sigv4 (~> 1.1)
@@ -169,8 +169,9 @@ GEM
     method_source (1.0.0)
     mini_magick (4.11.0)
     mini_mime (1.1.2)
+    mini_portile2 (2.8.0)
     minitest (5.16.3)
-    msgpack (1.5.4)
+    msgpack (1.5.6)
     net-imap (0.2.3)
       digest
       net-protocol
@@ -186,6 +187,9 @@ GEM
       net-protocol
       timeout
     nio4r (2.5.8)
+    nokogiri (1.13.8)
+      mini_portile2 (~> 2.8.0)
+      racc (~> 1.4)
     nokogiri (1.13.8-x86_64-darwin)
       racc (~> 1.4)
     pg (1.4.3)
@@ -193,7 +197,7 @@ GEM
       coderay (~> 1.1)
       method_source (~> 1.0)
     public_suffix (5.0.0)
-    puma (5.6.4)
+    puma (5.6.5)
       nio4r (~> 2.0)
     racc (1.6.0)
     rack (2.2.4)
@@ -226,7 +230,7 @@ GEM
       thor (~> 1.0)
       zeitwerk (~> 2.5)
     rake (13.0.6)
-    redis (4.7.1)
+    redis (4.8.0)
     regexp_parser (2.5.0)
     reline (0.3.1)
       io-console (~> 0.5)
@@ -285,6 +289,7 @@ GEM
     zeitwerk (2.6.0)
 
 PLATFORMS
+  ruby
   x86_64-darwin-21
 
 DEPENDENCIES
