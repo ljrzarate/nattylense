@@ -1,0 +1,10 @@
+<% @presets.each do |preset| %>
+  <div class="d-flex p-4 justify-content-around">
+    <%= image_tag preset.file.variant(:thumb) %>
+    <%= preset.title %>
+    <div class="d-flex">
+      <%= preset.price %>
+      <%= button_to "Add to wallet" %>
+    </div>
+  </div>
+<% end %>
