@@ -1,8 +1,24 @@
 <div class="d-flex p-4">
-    <%= @preset.title %>
-    <%= button_to "Buy", presets_path %>
+	<div>
+		<%= image_tag @preset.file.variant(:thumb) %>
+	</div>
+
+	<%= @preset.title %>
+	<div class="cho-container"></div>
 </div>
-<div>
-    <%= image_tag @preset.file.variant(:thumb) %>
-    <%= button_to "Go back", presets_path %>
-</div>
+
+<script>
+  const mp = new MercadoPago("<%= ENV['MERCADO_PAGO_PUBLIC_KEY'] %>", {
+    locale: 'en-US'
+  });
+
+  mp.checkout({
+    preference: {
+      id: "<%= @preference_id %>"
+    },
+    render: {
+      container: '.cho-container',
+      label: 'Pay',
+    }
+  });
+</script>
