@@ -8,4 +8,11 @@
 
 
 # Needs to create the list of tags
+  tag_list = [ { name: "Nature"},  { name: "Portait" }, { name: "People" }, { name: "Architecture" }, { name: "Animals" }, { name: "Sports" }, { name: "Travel"} ]
+
 # needs to create a post per tag
+
+  tag_list.each do |tag|
+    @post = Post.create(
+      title: tag[:name], description: "This is a post on #{tag[:name]}", tag_list: tag[:name])  
+  end
