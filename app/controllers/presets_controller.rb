@@ -9,8 +9,8 @@ class PresetsController < ApplicationController
     preference_data = {
       items: [
         {
-          title: 'My Item',
-          unit_price: 75,
+          title: @preset.title,
+          unit_price: @preset.price,
           quantity: 1
         }
       ]

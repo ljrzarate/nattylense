@@ -6,10 +6,21 @@ class PresetDashboard < Administrate::BaseDashboard
     id: Field::Number,
     title: Field::String,
     price: Field::Number,
-    file: Field::ActiveStorage
+    before_file: Field::ActiveStorage.with_options(
+      index_display_preview: true,
+      index_preview_size: [150, 150],
+      show_preview_size: [800, 800]
+    ),
+    after_file: Field::ActiveStorage.with_options(
+      index_display_preview: true,
+      variant: [150, 150],
+      show_preview_size: [100, 100]
+    ),
+    description: Field::Text
   }.freeze
 
   COLLECTION_ATTRIBUTES = %i[
+    before_file
     title
     price
   ].freeze
@@ -19,13 +30,16 @@ class PresetDashboard < Administrate::BaseDashboard
     id
     title
     price
-    file
+    before_file
+    after_file
   ].freeze
 
   FORM_ATTRIBUTES = %i[
     title
     price
-    file
+    description
+    before_file
+    after_file
   ].freeze
 
   COLLECTION_FILTERS = {}.freeze
