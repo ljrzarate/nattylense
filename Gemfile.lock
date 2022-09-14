@@ -352,6 +352,7 @@ DEPENDENCIES
   jsbundling-rails
   letter_opener
   mercadopago-sdk
+  mini_magick
   pg (~> 1.1)
   pry
   puma (~> 5.0)

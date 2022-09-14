@@ -1,7 +1,7 @@
 <% @presets.each do |preset| %>
   <div class="d-flex p-4 align-items-center">
     <%= link_to preset_path(preset) do %>
-      <%= image_tag preset.file.variant(:thumb) %>
+      <%= image_tag rails_blob_url(preset.file.variant(:thumb)) %>
     <%- end %>
     <div class="d-block ms-5">
       <p>Title: <%= preset.title %></p>
