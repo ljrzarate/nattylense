@@ -57,7 +57,10 @@
                   <a href="#">Gallery</a>
                   <ul class="dropdown">
                     <% all_tags.each do |tag| %>
-                      <li><%= link_to tag.name %></li>
+
+                      <li>
+                        <%= link_to tag.name, search_home_path(tag: tag.name.to_sym) %>
+                      </li>
                     <% end %>
                   </ul>
                 </li>
