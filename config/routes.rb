@@ -17,5 +17,6 @@ Rails.application.routes.draw do
     end
   end
   resources :presets
+  resources :contacts, only: [:new, :create]
   resources :payments, only:[:new, :create]
 end
