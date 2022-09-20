@@ -10,7 +10,9 @@
 
 </div>
 
-<% @presets.each do |preset| %>
+<%
+=begin%>
+ <% @presets.each do |preset| %>
   <%= link_to preset_path(preset) do %>
     <div class="row">
       <div class="col-md-6 col-lg-6 col-xl-4 text-center mb-5 mb-lg-5">
@@ -22,4 +24,22 @@
       </div>
     </div>
   <% end %>
-<% end %>
+<% end %> 
+<%
+=end%>
+
+<div class="container">
+  <div class="row row-cols-lg-3 row-cols-sm-2 row-cols-1">
+    <% @presets.each do |preset| %>
+      <%= link_to preset_path(preset) do %>
+          <div class="col h-100 p-3 text-center">
+            <div class="h-100 p-5 site-block-feature-7">
+              <span class="icon flaticon-camera display-3 text-primary mb-4 d-block"></span>
+              <h3 class="text-white h4"><%= preset.title %></h3>
+              <p> <strong class="font-weight-bold text-primary">$<%= preset.price %></strong></p>
+            </div>
+          </div>
+      <% end %>
+    <% end %>
+  </div>
+</div>
