@@ -11,19 +11,19 @@
         <nav class="site-navigation position-relative text-right text-lg-center" role="navigation">
 
           <ul class="site-menu js-clone-nav mx-auto d-none d-lg-block">
-            <li class="active"><%= link_to "Home", root_path %></li>
+            <li class="<%= active_class('/') %>"><%= link_to "Home", root_path %></li>
             <li class="has-children">
               <a href="#">Gallery</a>
               <ul class="dropdown">
                 <% all_tags.each do |tag| %>
-                  <li>
+                  <li <%= active_class(search_home_path(tag)) %>>
                     <%= link_to tag.name.titleize, search_home_path(tag: tag.name.to_sym) %>
                   </li>
                 <% end %>
               </ul>
             </li>
-            <li><%= link_to "Presets", presets_path %></li>
-            <li><%= link_to "Contact", new_contact_path %></li>
+            <li class="<%= active_class(presets_path) %>"><%= link_to "Presets", presets_path %></li>
+            <li class="<%= active_class(new_contact_path) %>"><%= link_to "Contact", new_contact_path %></li>
             <%= render partial: "shared/navigation/login" %>
           </ul>
         </nav>
