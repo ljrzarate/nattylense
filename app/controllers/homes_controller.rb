@@ -12,6 +12,6 @@ class HomesController < ApplicationController
   end
 
   def search
-    @posts = Post.tagged_with(params[:tag])
+    @posts = Post.order('random()').tagged_with(params[:tag])
   end
 end

@@ -10,7 +10,7 @@
 //= link template/jquery-ui.css
 //= link template/owl.carousel.min.css
 //= link template/owl.theme.default.min.css
-//= link template/lightgallery.min.css
+//= link template/lightgallery.css
 //= link template/bootstrap-datepicker.css
 //= link template/swiper.css
 //= link template/aos.css

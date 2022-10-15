@@ -16,6 +16,10 @@
 <script>
   $(document).ready(function(){
     console.log("body loaded")
-    $('#lightgallery').lightGallery();
+    $('#lightgallery').lightGallery(
+      {
+        download: false,
+      }
+    );
   });
 </script>

@@ -14,5 +14,5 @@
 
   tag_list.each do |tag|
     @post = Post.create(
-      title: tag[:name], description: "This is a post on #{tag[:name]}", tag_list: tag[:name])  
+      title: tag[:name], description: "This is a post on #{tag[:name]}", tag_list: tag[:name])
   end
